@@ -1,0 +1,18 @@
+<view class="wrap">
+  <view class="search">
+    <input class="input" bindinput="getName" placeholder="请输入商品名"></input>
+    <navigator url="/pages/show/show?name={{name}}"><image src="/images/temp/search.jpg" ></image></navigator>
+  </view>
+</view>
+
+<view class="container">
+
+  <navigator url="/pages/detail/detail?id={{item.id}}" class="product" wx:for="{{productList}}" wx:key="index">
+    <image src="{{item.src}}"></image>
+    <view class="product_info">
+      <text>{{item.name}}</text>
+      <text class="price">￥{{item.price}}</text>
+    </view>
+  </navigator>
+
+</view>

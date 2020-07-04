@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/cart/cart",
+    "pages/producttype/producttype",
+    "pages/show/show",
+    "pages/producttag/producttag",
+    "pages/register/register",
+    "pages/my/my",
+    "pages/my/order/order",
+    "pages/my/updatepassword/updatepassword",
+    "pages/my/mydetail/mydetail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#00ffff",
+    "navigationBarTitleText": "小商城",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/images/tabbar/tab-home.png",
+        "selectedIconPath": "/images/tabbar/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/producttype/producttype",
+        "text": "分类",
+        "iconPath": "/images/tabbar/tab-cate.png",
+        "selectedIconPath": "/images/tabbar/tab-cate-current.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/images/tabbar/tab-cart.png",
+        "selectedIconPath": "/images/tabbar/tab-cart-current.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/tabbar/tab-my.png",
+        "selectedIconPath": "/images/tabbar/tab-my-current.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

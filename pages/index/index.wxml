@@ -1,0 +1,54 @@
+<view class="top">
+  <view class="search">
+    <input class="input" bindinput="getName" placeholder="请输入关键词" bindconfirm="tiaoZhuan"></input>
+    <navigator url="/pages/show/show?name={{name}}">
+      <image src="/images/temp/search.jpg"></image>
+    </navigator>
+  </view>
+</view>
+
+<view class="container">
+
+  <swiper autoplay="true" circular="true" indicator-dots="true">
+    <swiper-item>
+      <navigator url="/pages/detail/detail?id=7">
+        <image src="/images/index/banner1.jpg">
+        </image>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <navigator url="/pages/detail/detail?id=8">
+        <image src="/images/index/banner2.jpg"></image>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <navigator url="/pages/detail/detail?id=1">
+        <image src="/images/index/banner3.jpg"></image>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <navigator url="/pages/detail/detail?id=5">
+        <image src="/images/index/banner4.jpg"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+
+  <view class="nav">
+    <navigator url="/pages/producttag/producttag?tag={{item.tag}}" class="menu" wx:for="{{navList}}" wx:key="index">
+      <image src="{{item.src}}"></image>
+      <text>{{item.title}}</text>
+    </navigator>
+  </view>
+</view>
+
+<text class="hot">热卖产品</text>
+<view class="wrap">
+  <navigator url="/pages/detail/detail?id={{item.id}}" class="product" wx:for="{{productList}}" wx:key="index" wx:if="{{index<8}}">
+    <image src="{{item.src}}" mode="widthFix"></image>
+    <view class="info">
+      <text class="name" decode="true">{{item.name}}&nbsp;</text>
+      <text class="price">{{item.price}}元</text>
+    </view>
+  </navigator>
+
+</view>

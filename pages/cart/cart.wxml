@@ -1,0 +1,37 @@
+<view class="empty">{{empty}}</view>
+<scroll-view scroll-y class="distance">
+<view class="container"  wx:for="{{cartList}}" wx:key="index">
+
+
+<view class="left">
+<image src="{{item.src}}" class="product_image"></image>
+
+<view class="product_info">
+<text>{{item.name}}</text>
+<text class="price">￥{{item.price}}</text>
+</view>
+</view>
+
+<view class="right">
+<image  src="/images/temp/cart2.png"  bindtap="subtract" data-text="{{item.pid}}" ></image>
+<image src="/images/temp/cart1.png" bindtap="add" data-text="{{item.pid}}" ></image>
+
+<checkbox-group id="{{item.pid}}"  class="checkbox"  bindchange="checkboxChange">
+<checkbox value="{{item.pid}}"  checked="{{item.selectedstatus}}"></checkbox>
+</checkbox-group> 
+
+</view>
+<text class="paynum">{{item.paynum}}</text>
+<text class="inventory">库存{{item.inventory}}件</text>
+</view>
+</scroll-view>
+
+
+<view class="bottom">
+<checkbox class="allselected" bindtap="allSelected" checked="{{chk}}">{{selectAllText}}</checkbox>
+<button  class="delete" bindtap="deleteProduct">删除</button>
+<button class="pay" bindtap="toPay">
+去付款￥<text>{{payMoney}}</text>
+</button>
+</view>
+

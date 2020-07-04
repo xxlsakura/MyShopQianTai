@@ -1,0 +1,29 @@
+<view class="wrap">
+  <view class="search">
+    <input class="input" bindinput="getName" placeholder="请输入关键词" bindconfirm="tiaoZhuan"></input>
+    <navigator url="/pages/show/show?name={{name}}">
+      <image src="/images/temp/search.jpg"></image>
+    </navigator>
+  </view>
+</view>
+
+<view class="container">
+
+  <view class="menu">
+    <view class="{{currentName==item.name?'selected':''}}" wx:for="{{productTypeList}}" wx:key="index">
+      <text id="{{item.name}}" bindtap="selectType">{{item.name}}</text>
+    </view>
+  </view>
+
+  <view class="product">
+    <navigator url="/pages/detail/detail?id={{item.id}}" class="productlist" wx:for="{{productList}}" wx:key="index">
+      <image src="{{item.src}}"></image>
+      <view class="product_info">
+        <text>{{item.name}}</text>
+        <text>￥{{item.price}}</text>
+      </view>
+    </navigator>
+  </view>
+
+
+</view>

@@ -1,0 +1,27 @@
+<view class="container">
+
+<text class="text">欢迎注册</text>
+
+<view class="wrap">
+<text>用户名:</text>
+<input placeholder="请输入用户名" bindblur="getUsername"></input>
+</view>
+
+<view class="wrap">
+<text>密码:</text>
+<input type="password" placeholder="字母、数字，不少于6位" bindblur="getPassword"></input>
+</view>
+
+<view class="wrap">
+<text>确认密码:</text>
+<input type="password" placeholder="请再次输入密码" bindblur="againPassword"></input>
+</view>
+
+<view class="wrap">
+<text>手机号码:</text>
+<input placeholder="请输入手机号码" bindblur="getPhone"></input>
+</view>
+
+<button bindtap="submit">提交</button>
+
+</view>

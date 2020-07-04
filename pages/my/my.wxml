@@ -1,0 +1,48 @@
+<view class="container">
+
+<view class="wrap">
+<image src="{{tempFilePaths}}" bindtap="actionSheetbindchange"></image>
+
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetbindchange">
+    <block>
+        <action-sheet-item bindtap="chooseimage" >更换头像</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>
+
+<text wx:for="{{userList}}" wx:key="index">{{item.username}}</text>
+</view>
+
+
+<view class="info">
+<text class="textone" bindtap="goMyDetail">个人信息</text>
+<text class="texttwo">></text>
+</view>
+
+
+
+<view class="info" bindtap="updatepassword">
+<text class="textone">修改密码</text>
+<text class="texttwo">></text>
+</view>
+
+<view class="info" bindtap="userSafe">
+<text class="textone">账号安全</text>
+<text class="texttwo">></text>
+</view>
+
+<view class="info" bindtap="deleteUser">
+<text class="textone">注销账号</text>
+<text class="texttwo">></text>
+</view>
+
+
+<view class="info" bindtap="logout">
+<text class="textone">退出登录</text>
+<text class="texttwo">></text>
+</view>
+
+
+
+
+</view>

@@ -1,0 +1,81 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 30rpx;
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ordernum{
+  margin-left: 10rpx;
+}
+.productwrap{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0rpx 0;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.247);
+}
+.productimage{
+  margin-left: 10rpx;
+  margin-bottom: 0rpx;
+  width: 22%;
+}
+.productimage image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 16rpx; 
+}
+.info{
+  width: 54%;
+  margin-left: 10rpx;
+  margin-bottom: 0rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info text{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.num{
+ 
+  margin-left: 250rpx;
+  display: flex;
+  flex-direction: row;
+  line-height: 150rpx;
+  justify-content: center;
+}
+.tempimage{
+  margin: 0 20rpx;
+  margin-top: 58rpx;
+  width:30rpx;
+  height: 30rpx;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1rpx solid rgba(0, 0, 0, 0.247);
+}
+.bottom text{
+  margin-left: 20rpx;
+  width: 70%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+}
+.bottom button{
+  width: 30%;
+  height: 90rpx;
+  background-color: #ff4713;
+  color:white;
+  font-size: 32rpx;
+}

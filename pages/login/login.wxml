@@ -1,0 +1,11 @@
+<view class="container">
+  <text>欢迎登录</text>
+  <view class="wrap">
+    <input  class="username" bindblur='getUsername' placeholder='请输入用户名'></input>
+    <input type="password" class='password' bindblur='getPassword' placeholder='请输入密码'></input>
+  <view>
+  <button bindtap='login' class='btn_login'>登录</button>
+  <navigator url="/pages/register/register"><button  class='btn_register'>注册</button></navigator>
+  </view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+ 
+}
+.wrap{
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.info{
+  display: flex;
+  flex-direction: row;
+ 
+  border-bottom: 0rpx solid rgba(0, 0, 0, 0.233);
+  margin: 30rpx 0;
+}
+.info text{
+  
+  margin-left: 100rpx;
+  margin-right: 0;
+}
+.radio{
+  display: flex;
+  flex-direction: row;
+  
+}
+.radio1{
+  display: flex;
+  flex-direction: row;
+  margin: 0 60rpx;
+}
+
+.info input{
+ 
+ border-bottom: 1rpx solid #00a3f0;
+ margin-left: 20rpx;
+}
+button{
+  margin-top: 30rpx;
+  background-color: #00a3f0;
+  width: 100%;
+  color: white;
+}

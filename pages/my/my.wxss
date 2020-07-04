@@ -1,0 +1,43 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.wrap{
+  background-color: #00ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 260rpx;
+  width: 100%;
+}
+.wrap image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  justify-content: center;
+  margin-left: 40%;
+}
+.wrap text{
+  margin-top: 10rpx;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size:36rpx;
+  width: 100%;
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.226);
+}
+.textone{
+  width: 80%;
+  height: 90rpx;
+  line-height: 90rpx;
+  
+}
+.texttwo{
+  height: 90rpx;
+  line-height: 90rpx;
+  color: rgba(0, 0, 0, 0.226);
+}

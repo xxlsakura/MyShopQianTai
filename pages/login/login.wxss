@@ -1,0 +1,40 @@
+.container{
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  padding: 40rpx;
+  padding-top: 80rpx;
+}
+
+text{
+  font-size: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10rpx;
+}
+input{
+  border:2rpx solid #336699;
+  height: 90rpx;
+  border-radius: 12rpx;
+  padding-left: 16rpx;
+}
+.username{
+  margin: 16rpx 0;
+}
+.password{
+  margin-bottom: 16rpx;
+}
+.btn_login{
+  background-color: #00a3f0;
+  color :white;
+  margin-top: 24rpx;
+  margin-bottom: 16rpx;
+}
+.btn_register{
+  background-color: white;
+}

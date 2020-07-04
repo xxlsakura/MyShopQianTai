@@ -1,0 +1,44 @@
+<view class="container">
+
+<view class="wrap" wx:for="{{userList}}" wx:key="index">
+
+<view class="info">
+<text >用户名:</text>
+<input value="{{item.username}}" placeholder="请输入用户名" bindblur="getUsername"></input>
+</view>
+
+<view class="info">
+<text decode="true">&nbsp;&nbsp;&nbsp;年龄:</text>
+<input value="{{item.age}}" type="" placeholder="请输入年龄" bindblur="getAge"></input>
+</view>
+
+<view class="info">
+<text decode="true">&nbsp;&nbsp;&nbsp;性别:</text>
+<radio-group bindchange="radiochange" class="radio">
+ <radio value="男" class="radio1" checked="{{checkman}}">男</radio>
+ <radio value="女" class="radio2" checked="{{checkwoman}}">女</radio>
+</radio-group>
+</view>
+
+<view class="info">
+<text decode="true">&nbsp;&nbsp;&nbsp;地址:</text>
+<input value="{{item.address}}" placeholder="请输入地址" bindblur="getAddress"></input>
+</view>
+
+<view class="info">
+<text decode="true">&nbsp;&nbsp;&nbsp;手机:</text>
+<input value="{{item.phone}}" placeholder="请输入手机号" bindblur="getPhone"></input>
+</view>
+
+
+<view class="info">
+<text decode="true">&nbsp;&nbsp;&nbsp;邮箱:</text>
+<input value="{{item.email}}" placeholder="请输入邮箱" bindblur="getEmail"></input>
+</view>
+
+<button bindtap="submit">提交</button>
+
+</view>
+
+
+</view>
