@@ -1,2 +1,2 @@
 # testmyshopqiantai
-微信小程序商城前端
+微信小程序个人商城前端
